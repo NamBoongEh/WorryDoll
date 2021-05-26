@@ -28,13 +28,19 @@ const buttonStyle = css`
     `}
 
   ${(props) =>
-    props.teal &&
+    props.cyan &&
     css`
       background: ${palette.teal[5]};
       &:hover {
         background: ${palette.teal[4]};
       }
     `}
+
+    &:disabled {
+    background: ${palette.indigo[3]};
+    color: ${palette.indigo[5]};
+    cursor: not-allowed;
+  }
 `;
 
 const StyledButton = styled.button`
