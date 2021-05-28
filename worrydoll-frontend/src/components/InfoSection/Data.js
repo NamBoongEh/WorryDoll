@@ -1,0 +1,47 @@
+export const homeObjOne = {
+  id: 'about',
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: 'Anonymous',
+  headline: '익명 보장',
+  description: '개인 정보 없이 회원가입하여 자신의 걱정과 불안을 털어놓아요',
+  buttonLabel: '회원가입',
+  imgStart: false,
+  img: require('../../img/png1.png'),
+  dark: true,
+  primary: true,
+  darkText: false,
+};
+
+export const homeObjTwo = {
+  id: 'discover',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Anonymous',
+  headline: '익명 보장',
+  description: '개인 정보 없이 회원가입하여 자신의 걱정과 불안을 털어놓아요',
+  buttonLabel: '회원가입',
+  imgStart: true,
+  img: require('../../img/svg-1.svg'),
+  dark: false,
+  primary: false,
+  darkText: true,
+};
+
+export const homeObjThree = {
+  id: 'signup',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: 'Anonymous',
+  headline: '익명 보장',
+  description: '개인 정보 없이 회원가입하여 자신의 걱정과 불안을 털어놓아요',
+  buttonLabel: '회원가입',
+  imgStart: false,
+  img: require('../../img/svg-1.svg'),
+  dark: false,
+  primary: false,
+  darkText: true,
+};
