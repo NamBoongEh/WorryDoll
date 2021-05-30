@@ -1,4 +1,5 @@
 import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 import { FaFacebook, FaGithub } from 'react-icons/fa';
 import {
   FooterContainer,
@@ -17,6 +18,11 @@ import {
 } from './FooterElements';
 
 const Footer = () => {
+  // 로고 클릭시 가장 위로 올라오게하는 이벤트
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <FooterContainer>
       <FooterWrap>
@@ -55,7 +61,9 @@ const Footer = () => {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">WORRYDOLL</SocialLogo>
+            <SocialLogo to="/" onClick={toggleHome}>
+              WORRYDOLL
+            </SocialLogo>
             <WebsiteRights>WORRYDOLL © 2021 All rights reserved.</WebsiteRights>
             <SocialIcons>
               <SocialIconLink href="/" target="_blank" aria-label="Facebook">

@@ -27,13 +27,16 @@ const HeroElements = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>언제 어디서든 걱정과 불안을 털어놓으세요</HeroH1>
+        <HeroH1>
+          WORRYDOLL
+          <br />
+          언제 어디서든 걱정과 불안을 털어놓으세요
+        </HeroH1>
         <HeroP>
           복잡한 회원가입은 그만
           <br />
           개인정보가 필요없는 익명의 비밀 일기장
           <br />
-          걱정인형 프로젝트
         </HeroP>
         <HeroBtnWrapper>
           <Button

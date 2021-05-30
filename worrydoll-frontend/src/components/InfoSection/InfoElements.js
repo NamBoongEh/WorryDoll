@@ -37,7 +37,7 @@ export const InfoRow = styled.div`
 export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
-  grid-area: col1;
+  grid-area: col6;
 `;
 
 export const Column2 = styled.div`
@@ -79,7 +79,7 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+  color: black;
 `;
 
 export const BtnWrap = styled.div`
@@ -93,7 +93,6 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
 `;
