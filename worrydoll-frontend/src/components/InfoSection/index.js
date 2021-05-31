@@ -35,9 +35,9 @@ const InfoSection = ({
       <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
           <InfoRow imgStart={imgStart} style={{ display: 'flex' }}>
-            <Column1 style={{ width: '40%' }}>
+            <Column1>
               <TextWrapper>
-                <TopLine>{topLine}</TopLine>
+                <TopLine style={{ color: '#4c6ef5' }}>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
@@ -57,9 +57,12 @@ const InfoSection = ({
                 </BtnWrap>
               </TextWrapper>
             </Column1>
-            <Column2 style={{ width: '40%' }}>
+            <Column2>
               <ImgWrap>
-                <Img src={img} style={{ height: '400px', widht: '400px' }} />
+                <Img
+                  src={img}
+                  style={{ height: '400px', width: '400px', marginLeft: '10%' }}
+                />
               </ImgWrap>
             </Column2>
           </InfoRow>

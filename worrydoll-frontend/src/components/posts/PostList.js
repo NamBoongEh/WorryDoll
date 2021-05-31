@@ -6,9 +6,17 @@ import Button from '../common/Button';
 import Responsive from '../common/Responsive';
 import SubInfo from '../common/SubInfo';
 import Tags from '../common/Tags';
+import svg4 from '../../img/svg4.svg';
 
 const PostListBlock = styled(Responsive)`
   margin-top: 3rem;
+`;
+
+const Img = styled.img`
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: 0 auto 3rem;
 `;
 
 const WritePostButtonWrapper = styled.div`
@@ -59,7 +67,15 @@ const PostItem = ({ post }) => {
 const PostList = ({ posts, loading, error, showWriteButton }) => {
   //에러 발생 시
   if (error) {
-    return <PostListBlock>Error!!!</PostListBlock>;
+    return (
+      <PostListBlock style={{ textAlign: 'center', fontSize: '24px' }}>
+        <Img src={svg4} />
+        앗! 요청한 페이지가 없어요
+        <Link to='/main'>
+          <Button style={{ width: '20%', margin: '2rem auto' }}>홈으로</Button>
+        </Link>
+      </PostListBlock>
+    );
   }
 
   return (
@@ -67,7 +83,7 @@ const PostList = ({ posts, loading, error, showWriteButton }) => {
       <WritePostButtonWrapper>
         {showWriteButton && (
           <Button cyan to="/write">
-            Write new post
+          걱정 쓰러가기
           </Button>
         )}
       </WritePostButtonWrapper>

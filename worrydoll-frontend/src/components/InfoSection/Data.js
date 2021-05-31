@@ -9,7 +9,7 @@ export const homeObjOne = {
   lightTextDesc: true,
   topLine: 'Anonymous',
   headline: '익명 보장',
-  description: '개인 정보 없이 회원가입하여 자신의 걱정과 불안을 털어놓아요',
+  description: '개인 정보 없는 회원가입, 익명의 게시판',
   buttonLabel: 'Get started',
   imgStart: false,
   img: svg1,

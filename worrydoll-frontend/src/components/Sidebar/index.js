@@ -19,20 +19,17 @@ const Sidebar = ({ isOpen, toggle }) => {
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to="about" isOpen={isOpen} onClick={toggle}>
-            About
+            익명성
           </SidebarLink>
           <SidebarLink to="discover" isOpen={isOpen} onClick={toggle}>
-            Discover
+            접근성
           </SidebarLink>
-          <SidebarLink to="services" isOpen={isOpen} onClick={toggle}>
-            Services
-          </SidebarLink>
-          <SidebarLink to="singup" isOpen={isOpen} onClick={toggle}>
-            Sing up
+          <SidebarLink to="signup" isOpen={isOpen} onClick={toggle}>
+            회원가입
           </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to="/register" isOpen={isOpen} onClick={toggle}>
+          <SidebarRoute href="/login" isOpen={isOpen} onClick={toggle}>
             Sign In
           </SidebarRoute>
         </SideBtnWrap>

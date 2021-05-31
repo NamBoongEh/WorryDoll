@@ -5,9 +5,19 @@ import palette from '../../lib/styles/palette';
 import Responsive from '../common/Responsive';
 import SubInfo from '../common/SubInfo';
 import Tags from '../common/Tags';
+import svg4 from '../../img/svg4.svg';
+import { Button } from '../common/ButtonElement';
+import { Link } from 'react-router-dom';
 
 const PostViewerBlock = styled(Responsive)`
   margin-top: 4rem;
+`;
+
+const Img = styled.img`
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: 0 auto 3rem;
 `;
 
 const PostHead = styled.div`
@@ -32,7 +42,15 @@ const PostViewer = ({ post, error, loading, actionButtons }) => {
     if (error.response && error.response.status === 404) {
       return <PostViewerBlock>404 Not Found</PostViewerBlock>;
     }
-    return <PostViewerBlock>Error!!!</PostViewerBlock>;
+    return (
+      <PostViewerBlock style={{ textAlign: 'center', fontSize: '24px' }}>
+        <Img src={svg4} />
+        앗! 요청한 페이지가 없어요
+        <Link to='/main'>
+          <Button style={{ width: '20%', margin: '2rem auto' }}>홈으로</Button>
+        </Link>
+      </PostViewerBlock>
+    );
   }
 
   // 로딩 중이거나 아직 포스트 데이터가 없을 때
